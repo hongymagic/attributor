@@ -1,0 +1,25 @@
+{
+  "name": "attributor",
+  "version": "0.0.1-pre",
+  "description": "Extract HTML element attributes in correct types using a meta data",
+  "main": "attributor.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "html",
+    "attribute",
+    "type",
+    "extract",
+    "parse"
+  ],
+  "author": "David G. Hong",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-load-plugins": "^0.5.0",
+    "jshint-stylish": "^0.1.5",
+    "gulp-jshint": "^1.5.5",
+    "gulp-size": "^0.3.0"
+  }
+}
