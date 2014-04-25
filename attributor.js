@@ -72,6 +72,8 @@ function attributor(element, spec) {
 				value = true;
 			} else if (value.search(/^false$/i)) {
 				value = false;
+			} else {
+				value = undefined;
 			}
 		} else if (type === Array.name || type === Object.name) {
 			value = JSON.parse(value);

@@ -1,15 +1,15 @@
 'use strict';
 
-var gulp = require('gulp');
-
-// load plugins
-var $ = require('gulp-load-plugins')();
+var gulp     = require('gulp');
+var size     = require('gulp-size');
+var jshint   = require('gulp-jshint');
+var stylish  = require('jshint-stylish');
 
 gulp.task('scripts', function () {
 	return gulp.src('attributor.js')
-		.pipe($.jshint())
-		.pipe($.jshint.reporter($.jshintStylish))
-		.pipe($.size());
+		.pipe(jshint())
+		.pipe(jshint.reporter(stylish))
+		.pipe(size());
 });
 
 gulp.task('default', ['scripts']);
